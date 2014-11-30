@@ -1,4 +1,4 @@
-#emacs: -*- mode: python-mode; py-indent-offset: 4; tab-width: 4; indent-tabs-mode: nil -*- 
+#emacs: -*- mode: python-mode; py-indent-offset: 4; tab-width: 4; indent-tabs-mode: nil -*-
 #ex: set sts=4 ts=4 sw=4 noet:
 """Functionality to ease generation of vbench reports
 """
@@ -58,7 +58,7 @@ class ConsistentlyWorse(object):
         if means.size == 0:
             return None
 
-        min_idx = np.argmin(means)
+        min_idx = np.argmin(means.values)
         min_ = means[min_idx]
 
         # samples which
