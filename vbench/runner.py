@@ -122,7 +122,9 @@ class BenchmarkRunner(object):
         log.info("Running benchmarks for %d revisions" % (len(revisions),))
         # get the current black list (might be a different one on a next .run())
         blacklist = self.blacklist
-        for rev in revisions:
+        msg = "Revision number: {0} of {1}"
+        for i, rev in enumerate(revisions:)
+            log.info(msg.format(i, len(revisions)))
             if self.use_blacklist and rev in blacklist:
                 log.warn('Skipping blacklisted %s' % rev)
                 continue
